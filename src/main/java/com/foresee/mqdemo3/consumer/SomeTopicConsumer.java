@@ -17,8 +17,8 @@ import java.util.Optional;
 /**
  * @author: yuanrui
  */
-@RocketMQMessageListener(topic = "someTopic",
-        consumerGroup = "${rocketmq.consumer.group.simbaOpenapiImport}")
+@RocketMQMessageListener(topic = "${rocketmq.testTopic}",
+        consumerGroup = "${rocketmq.consumer.group.abc}")
 @Component
 @Slf4j
 public class SomeTopicConsumer implements RocketMQListener<MessageExt>, RocketMQPushConsumerLifecycleListener {
